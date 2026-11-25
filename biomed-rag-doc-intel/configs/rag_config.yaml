@@ -1,0 +1,29 @@
+project:
+  name: biomed-rag-doc-intel
+  version: 0.1.0
+  seed: 42
+
+chunking:
+  strategy: section_aware   # fixed | sliding_window | section_aware
+  chunk_size_words: 140
+  overlap_words: 30
+
+retrieval:
+  mode: hybrid              # bm25 | dense | hybrid
+  top_k: 4
+  rrf_k: 60
+  dense_dim: 64
+  embedding_backend: tfidf_svd   # tfidf_svd (offline/CI) | sentence_transformers (GPU/API)
+  embedding_model: BAAI/bge-small-en-v1.5
+
+generation:
+  backend: grounded_extractive   # grounded_extractive | openai_compatible | huggingface_local
+  model: gpt-4o-mini
+  temperature: 0.0
+  max_tokens: 512
+  prompt_version: v2_strict_grounding
+
+evaluation:
+  min_recall_at_k: 0.75
+  min_mrr: 0.65
+  min_groundedness: 0.80

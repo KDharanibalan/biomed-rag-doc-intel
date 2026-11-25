@@ -1,0 +1,86 @@
+[
+  {
+    "id": "qa_01",
+    "query": "What ultracentrifugation speed and duration are specified for primary EV pelleting in the EV isolation SOP?",
+    "expected_doc_id": "SOP-BIO-EV-014",
+    "expected_keywords": ["100,000 x g", "70 minutes", "4 C", "Ti-70"],
+    "category": "protocol_parameter"
+  },
+  {
+    "id": "qa_02",
+    "query": "What is the required negative contamination marker and threshold for EV quality control?",
+    "expected_doc_id": "SOP-BIO-EV-014",
+    "expected_keywords": ["Calnexin", "absent", "5%"],
+    "category": "qc_criteria"
+  },
+  {
+    "id": "qa_03",
+    "query": "How many freeze-thaw cycles are permitted for EV fractions stored at -80 C?",
+    "expected_doc_id": "SOP-BIO-EV-014",
+    "expected_keywords": ["-80 C", "2 cycles", "6 months"],
+    "category": "storage_compliance"
+  },
+  {
+    "id": "qa_04",
+    "query": "What GHS reproductive toxicity classification and hazard code apply to Dexamethasone?",
+    "expected_doc_id": "SDS-CHEM-DEX-009",
+    "expected_keywords": ["Category 1B", "H360", "DANGER"],
+    "category": "safety_compliance"
+  },
+  {
+    "id": "qa_05",
+    "query": "What PPE is required when weighing dry Dexamethasone powder?",
+    "expected_doc_id": "SDS-CHEM-DEX-009",
+    "expected_keywords": ["double nitrile gloves", "chemical splash goggles", "N95/P100"],
+    "category": "safety_compliance"
+  },
+  {
+    "id": "qa_06",
+    "query": "What are the storage temperature requirements for dry Dexamethasone versus DMSO stock solutions?",
+    "expected_doc_id": "SDS-CHEM-DEX-009",
+    "expected_keywords": ["2 C to 8 C", "-20 C", "3 months"],
+    "category": "storage_compliance"
+  },
+  {
+    "id": "qa_07",
+    "query": "What RP-HPLC purity and endotoxin level were measured for batch CLP-2026-B042?",
+    "expected_doc_id": "COA-BIO-CLP-2026-042",
+    "expected_keywords": ["97.4%", "0.32 EU/mg", "PASS"],
+    "category": "coa_verification"
+  },
+  {
+    "id": "qa_08",
+    "query": "What is the triple-helix thermal stability (Tm) specification and measured value for the Collagen-Like Protein batch?",
+    "expected_doc_id": "COA-BIO-CLP-2026-042",
+    "expected_keywords": ["36.0 C - 40.0 C", "38.4 C", "Circular Dichroism"],
+    "category": "coa_verification"
+  },
+  {
+    "id": "qa_09",
+    "query": "What is the expiry date and recommended reconstitution buffer for CLP-2026-B042?",
+    "expected_doc_id": "COA-BIO-CLP-2026-042",
+    "expected_keywords": ["2027-01-20", "10 mM acetic acid", "PBS"],
+    "category": "coa_verification"
+  },
+  {
+    "id": "qa_10",
+    "query": "Which E3 ubiquitin ligases are upregulated during acute skeletal muscle wasting?",
+    "expected_doc_id": "STUDY-PROT-2026-007",
+    "expected_keywords": ["MuRF1", "TRIM63", "Atrogin-1", "FBXO32"],
+    "category": "scientific_synthesis"
+  },
+  {
+    "id": "qa_11",
+    "query": "By how much did nutritional supplementation attenuate myotube diameter reduction in atrophy models?",
+    "expected_doc_id": "STUDY-PROT-2026-007",
+    "expected_keywords": ["28%", "MuRF1", "cytotoxicity"],
+    "category": "scientific_synthesis"
+  },
+  {
+    "id": "qa_12",
+    "query": "What orthogonal validation standard is required before adding multi-omics candidates to biomarker ML models?",
+    "expected_doc_id": "STUDY-PROT-2026-007",
+    "expected_keywords": ["qPCR", "Western blotting", "n = 3"],
+    "category": "validation_policy"
+  }
+]
